@@ -1,11 +1,10 @@
 # Traffic sign detection 
 
-## 赛题
-
-旷视AI智慧交通开源赛道，初赛6/177，决赛4/12。  
+## 赛题简介
+ 
 本赛题为复杂场景的交通标志检测，对五种交通标志进行识别，官方网址：https://studio.brainpp.com/competition/4?name=%E6%97%B7%E8%A7%86AI%E6%99%BA%E6%85%A7%E4%BA%A4%E9%80%9A%E5%BC%80%E6%BA%90%E8%B5%9B%E9%81%93&tab=overview  
 
-## 算法方案
+## 解决方案
 
 网络结构：faster-rcnn r50  
 训练策略：学习率为 0.02 / 16 * gpu数量 * batchsize, batchsize=1，训练24epoch，在16, 22下降；（初赛分数 44->47；训练36epoch基本没有提升）  
